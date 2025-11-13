@@ -123,11 +123,6 @@ st.markdown("""
         <a href="https://www.xiaohongshu.com/user/profile/61fc9d5f0000000010007296" target="_blank" style="color: #ff6b6b; text-decoration: none; font-weight: bold;">
             城镇捕风笔记
         </a>
-        <br>
-        <strong>小红书：</strong>
-        <a href="https://www.xiaohongshu.com/user/profile/61fc9d5f0000000010007296" target="_blank" style="color: #1f77b4;">
-            https://www.xiaohongshu.com/user/profile/61fc9d5f0000000010007296
-        </a>
     </p>
     <div style="background-color: #fff4f4; padding: 10px; border-radius: 5px;">
         <h5 style="margin: 0 0 10px 0; color: #d63031;">⚠️ 免责声明：</h5>
