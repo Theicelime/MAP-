@@ -119,16 +119,21 @@ st.markdown("""
 <div style="background-color: #f0f2f6; padding: 15px; border-radius: 10px; border-left: 5px solid #ff6b6b; margin-bottom: 20px;">
     <h4 style="margin-top: 0; color: #333;">制作者信息</h4>
     <p style="margin-bottom: 10px;">
-        <strong>制作者：城镇捕风笔记</strong><br>
-        <strong>小红书：[点击访问](https://www.xiaohongshu.com/user/profile/61fc9d5f0000000010007296)  </strong>
-        <a href="https://www.xiaohongshu.com/user/profile/61fc9d5f0000000010007296" target="_blank">
+        <strong>制作者：</strong>
+        <a href="https://www.xiaohongshu.com/user/profile/61fc9d5f0000000010007296" target="_blank" style="color: #ff6b6b; text-decoration: none; font-weight: bold;">
+            城镇捕风笔记
+        </a>
+        <br>
+        <strong>小红书：</strong>
+        <a href="https://www.xiaohongshu.com/user/profile/61fc9d5f0000000010007296" target="_blank" style="color: #1f77b4;">
+            https://www.xiaohongshu.com/user/profile/61fc9d5f0000000010007296
         </a>
     </p>
     <div style="background-color: #fff4f4; padding: 10px; border-radius: 5px;">
         <h5 style="margin: 0 0 10px 0; color: #d63031;">⚠️ 免责声明：</h5>
         <ul style="margin: 0; padding-left: 20px;">
             <li>本工具完全<strong>免费</strong>，请勿买卖</li>
-                 <li>重要数据请务必进行验证测试</li>
+            <li>重要数据请务必进行验证测试</li>
         </ul>
     </div>
 </div>
