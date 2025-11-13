@@ -122,7 +122,6 @@ st.markdown("""
         <strong>制作者：城镇捕风笔记</strong><br>
         <strong>小红书：</strong>
         <a href="https://www.xiaohongshu.com/user/profile/61fc9d5f0000000010007296" target="_blank">
-            https://www.xiaohongshu.com/user/profile/61fc9d5f0000000010007296
         </a>
     </p>
     <div style="background-color: #fff4f4; padding: 10px; border-radius: 5px;">
