@@ -1,53 +1,38 @@
-// ==UserScript==
-// @name         Douban2Piratebay
-// @namespace    https://github.com/bitdust/Douban2Piratebay/
-// @version      0.6
-// @description  And direct link to piratebay from douban movie page.
-// @author       bitdust
-// @match        https://movie.douban.com/subject/*
-// @updateURL    https://raw.githubusercontent.com/bitdust/Douban2Piratebay/master/Douban2Piratebay.meta.js
-// @downloadURL  https://raw.githubusercontent.com/bitdust/Douban2Piratebay/master/Douban2Piratebay.user.js
-// @grant        none
-// ==/UserScript==
+# 坐标系转换工具
 
-(function() {
-    'use strict';
+一个基于Streamlit的在线坐标系转换工具，支持WGS84、GCJ02和BD09坐标系之间的相互转换。
 
-function insertAfter(newNode, referenceNode) {
-        referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
-    }
-    
-    function addLink(fragment, text, href){
-        let a = imdblink.cloneNode(true);
-        a.textContent = text;
-        a.href = href;
-        fragment.appendChild(a);
-    }
+## 功能特点
 
-var links =  document.querySelectorAll (
-        "#info > a"
-    );
-    var imdblink = null;
-    var imdbRe = new RegExp("tt[0-9]{4,}");
-    for (var i=0; i<links.length; i++) {
-        if(imdbRe.test(links[i].textContent)) {
-            imdblink = links[i];
-            break;
-        }
-    }
+- 🌍 支持WGS84、GCJ02、BD09坐标系互转
+- 📊 支持CSV和Excel文件格式
+- 🔄 批量处理大量坐标点
+- 📥 一键下载转换结果
+- 🎯 用户友好的Web界面
 
-if (imdblink !== null) {
-       var imdbindex = imdblink.innerText;
-       var fragment = document.createDocumentFragment();
-       var br = document.createElement("br");
-       var span = imdblink.previousElementSibling.cloneNode(false);
-       span.textContent = "资源：";
-       fragment.appendChild(br);
-       fragment.appendChild(span);
-       addLink(fragment, "TPB ", 'https://thepiratebay.org/search/' + imdbindex);
-       addLink(fragment, "RARGB ", 'https://rarbgmirror.com/torrents.php?imdb=' + imdbindex);
-       addLink(fragment, "电影蜜蜂 ",'http://www.hdbee.net/' + imdbindex);
-       addLink(fragment, "胖鸟电影", 'http://www.pniao.com/' + imdbindex);
-       insertAfter(fragment, imdblink);
-    }
-})();
+## 支持的转换
+
+- WGS84 ↔ GCJ02
+- WGS84 ↔ BD09  
+- GCJ02 ↔ BD09
+
+## 使用方法
+
+1. 上传包含坐标数据的CSV或Excel文件
+2. 选择经度和纬度字段
+3. 选择源坐标系和目标坐标系
+4. 设置输出字段名
+5. 点击"开始转换"按钮
+6. 下载转换后的文件
+
+## 部署
+
+此应用已部署在Streamlit Cloud，可直接访问使用。
+
+## 本地运行
+
+如需本地运行：
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
