@@ -129,9 +129,7 @@ st.markdown("""
         <h5 style="margin: 0 0 10px 0; color: #d63031;">⚠️ 免责声明：</h5>
         <ul style="margin: 0; padding-left: 20px;">
             <li>本工具完全<strong>免费</strong>，请勿买卖</li>
-            <li>作者不对数据准确性做任何担保</li>
-            <li>使用者对转换结果负全部责任</li>
-            <li>重要数据请务必进行验证测试</li>
+                 <li>重要数据请务必进行验证测试</li>
         </ul>
     </div>
 </div>
