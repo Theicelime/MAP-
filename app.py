@@ -120,7 +120,7 @@ st.markdown("""
     <h4 style="margin-top: 0; color: #333;">制作者信息</h4>
     <p style="margin-bottom: 10px;">
         <strong>制作者：城镇捕风笔记</strong><br>
-        <strong>小红书：</strong>
+        <strong>小红书：[点击访问](https://www.xiaohongshu.com/user/profile/61fc9d5f0000000010007296)  </strong>
         <a href="https://www.xiaohongshu.com/user/profile/61fc9d5f0000000010007296" target="_blank">
         </a>
     </p>
