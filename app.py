@@ -113,6 +113,30 @@ class CoordinateConverter:
 
 # 页面标题和介绍
 st.title("🌍 坐标系转换工具")
+
+# 制作者信息和免责声明 - 放在显眼位置
+st.markdown("""
+<div style="background-color: #f0f2f6; padding: 15px; border-radius: 10px; border-left: 5px solid #ff6b6b; margin-bottom: 20px;">
+    <h4 style="margin-top: 0; color: #333;">制作者信息</h4>
+    <p style="margin-bottom: 10px;">
+        <strong>制作者：城镇捕风笔记</strong><br>
+        <strong>小红书：</strong>
+        <a href="https://www.xiaohongshu.com/user/profile/61fc9d5f0000000010007296" target="_blank">
+            https://www.xiaohongshu.com/user/profile/61fc9d5f0000000010007296
+        </a>
+    </p>
+    <div style="background-color: #fff4f4; padding: 10px; border-radius: 5px;">
+        <h5 style="margin: 0 0 10px 0; color: #d63031;">⚠️ 免责声明：</h5>
+        <ul style="margin: 0; padding-left: 20px;">
+            <li>本工具完全<strong>免费</strong>，请勿买卖</li>
+            <li>作者不对数据准确性做任何担保</li>
+            <li>使用者对转换结果负全部责任</li>
+            <li>重要数据请务必进行验证测试</li>
+        </ul>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
 st.markdown("""
 这个工具可以帮助您在 **WGS84**、**GCJ02** 和 **BD09** 坐标系之间进行转换。
 - **WGS84**: GPS全球定位系统使用的坐标系
@@ -137,6 +161,13 @@ with st.sidebar:
     
     st.header("关于")
     st.markdown("""
+    **制作者**: 城镇捕风笔记  
+    **小红书**: [点击访问](https://www.xiaohongshu.com/user/profile/61fc9d5f0000000010007296)  
+    
+    **声明**: 
+    - 本工具完全免费，请勿买卖
+    - 使用者对结果负全部责任
+    
     此工具基于公开的坐标转换算法开发，
     适用于地理信息数据处理和地图应用开发。
     """)
@@ -351,6 +382,12 @@ else:
     st.dataframe(example_data, use_container_width=True)
     st.caption("示例数据格式: 包含经度(longitude)和纬度(latitude)字段")
 
-# 页脚
+# 页脚 - 再次强调版权和免责
 st.markdown("---")
-st.caption("坐标系转换工具 © 2023 | 基于Streamlit构建")
+st.markdown("""
+<div style="text-align: center; color: #666; font-size: 0.9em;">
+    <p><strong>坐标系转换工具</strong> | 制作者: <strong>城镇捕风笔记</strong> | 
+    <a href="https://www.xiaohongshu.com/user/profile/61fc9d5f0000000010007296" target="_blank">小红书</a></p>
+    <p><em>本工具完全免费，请勿买卖。使用者对转换结果负全部责任。</em></p>
+</div>
+""", unsafe_allow_html=True)
